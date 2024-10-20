@@ -11,12 +11,12 @@ mydb = mysql.connector.connect(
 mycursor = mydb.cursor()
 
 # Create the database library_management if it doesn't exist
-mycursor.execute("CREATE DATABASE IF NOT EXISTS library_management")
-print("Database library_management created successfully")
+mycursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
+print("Database 'alx_book_store' created successfully!")
 
 # Select the database
-mycursor.execute("USE library_management")
-print("Database library_management selected successfully")
+mycursor.execute("USE alx_book_store")
+print("Database alx_book_store selected successfully")
 
 mycursor.close()
 mydb.close()
